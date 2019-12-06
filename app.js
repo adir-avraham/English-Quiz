@@ -33,7 +33,7 @@ function draw(arrayOfQuestions, questionCounter) {
   question_title.innerText = arrayOfQuestions[questionCounter].question;
 
   inputA.innerHTML = arrayOfQuestions[questionCounter].choiceA;
-  //inputA.previousElementSibling.checked = false
+  inputA.previousElementSibling.checked = false
   inputB.innerText = arrayOfQuestions[questionCounter].choiceB;
   inputB.previousElementSibling.checked = false;
   inputC.innerText = arrayOfQuestions[questionCounter].choiceC;
@@ -91,10 +91,16 @@ function showResults() {
     case 8:
     level_result.innerText = "Your level of English: Fluent";
     break;
-    case 7 || 6:
+    case 7:
     level_result.innerText = "Your level of English: Advanced";
     break;
-    case 5 || 4:
+    case 6:
+    level_result.innerText = "Your level of English: Advanced";
+    break;
+    case 5:
+    level_result.innerText = "Your level of English: Intermediate";
+    break;
+    case 4:
     level_result.innerText = "Your level of English: Intermediate";
     break;
     default:
