@@ -3,76 +3,76 @@ let correctAnswers = 0;
 
 let arrayOfQuestions = [
   {
-    question: "Where in the body is the scapular muscle?",
-    choiceA: "Knee",
-    choiceB: "Shoulder",
-    choiceC: "Head",
-    choiceD: "Arm",
-    correct: "B",
-    isCorrect: false
-  },
-  {
-    question:
-      "What is the name of the only bone in the body not connected to another?",
-    choiceA: "Axis",
-    choiceB: "Ulna",
-    choiceC: "Femur",
-    choiceD: "Hyoid",
+    question: "As it ____ rains in Death Valley, California, scientists were amazed when the desert region sprouted flowers after an unexpected rainfall.",
+    choiceA: "carefully",
+    choiceB: "emptily",
+    choiceC: "nicely",
+    choiceD: "rarely",
     correct: "D",
     isCorrect: false
   },
   {
-    question: "According to the Red Cross what is the most common Blood Type?",
-    choiceA: "Blood Type A",
-    choiceB: "Blood Type O",
-    choiceC: "Blood Type B",
-    choiceD: "Blood type AB",
+    question:
+      "Until recently, lifesaving drugs were developed mostly by the rich and for the rich, ____ the afflictions of the world’s poor got very little attention.",
+    choiceA: "so that",
+    choiceB: "while",
+    choiceC: "since",
+    choiceD: "when",
     correct: "B",
     isCorrect: false
   },
   {
-    question: "What is the smallest bone in the human body?",
-    choiceA: "Stapes",
-    choiceB: "Pinna",
-    choiceC: "Clavicle",
-    choiceD: "Fibula",
+    question: "Psychiatrists have found that hospitalization in intensive care units can occasionally trigger post-traumatic stress ____ in patients.",
+    choiceA: "industry",
+    choiceB: "breadth",
+    choiceC: "disorder",
+    choiceD: "component",
+    correct: "C",
+    isCorrect: false
+  },
+  {
+    question: "The ancient process of wine making has remained nearly unchanged for centuries and still consists of five basic ______ of production.",
+    choiceA: "salaries",
+    choiceB: "nations",
+    choiceC: "stages",
+    choiceD: "instincts",
+    correct: "C",
+    isCorrect: false
+  },
+  {
+    question: "Holograms, water markings, and special ink are several of the security measures used to ______ the authenticity of banknotes.",
+    choiceA: "verify",
+    choiceB: "purchase",
+    choiceC: "charge",
+    choiceD: "breach",
     correct: "A",
     isCorrect: false
   },
   {
-    question: "How much does an average human heart weigh?",
-    choiceA: "Approx. 250gm-300grams - female & 300-350 grams-male",
-    choiceB: "Approx. 350-450grams female and 500-600gram male",
-    choiceC: "Approx. 100-150grams female and 200-250grams male",
-    choiceD: "Approx. 600-700gram female and 800-900grams male",
+    question: "There is still much debate as to the real reasons that has ______ the Great Depression of 1929 in the United States.",
+    choiceA: "risen from",
+    choiceB: "spoken for",
+    choiceC: "coped with",
+    choiceD: "led to",
+    correct: "D",
+    isCorrect: false
+  },
+  {
+    question: "Extensive exposure to certain types of radiation may cause _______ and even dangerous effects on health.",
+    choiceA: "injurious",
+    choiceB: "cheerful",
+    choiceC: "advantageous",
+    choiceD: "prolific",
     correct: "A",
     isCorrect: false
   },
   {
-    question: "Where in the body is the thyroid gland found?",
-    choiceA: "Stomach",
-    choiceB: "Underarm",
-    choiceC: "Neck",
-    choiceD: "Head",
-    correct: "C",
-    isCorrect: false
-  },
-  {
-    question: "What Body system do the Skin, hair and nails belong to?",
-    choiceA: "Circulatory System",
-    choiceB: "Skeletal System",
-    choiceC: "Integumentary System",
-    choiceD: "Digestive System",
-    correct: "C",
-    isCorrect: false
-  },
-  {
-    question: "What Body Part changes the least throughout a person’s life?",
-    choiceA: "Ears",
-    choiceB: "Nose",
-    choiceC: "Eyes",
-    choiceD: "Tongue",
-    correct: "C",
+    question: "By the end of the 24th week of a human baby’s development, all the organs are _______ formed.",
+    choiceA: "randomly",
+    choiceB: "fully",
+    choiceC: "angrily",
+    choiceD: "faithfully",
+    correct: "B",
     isCorrect: false
   }
 ];
