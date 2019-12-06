@@ -20,7 +20,7 @@
         <div class="row justify-content-lg-center">
             <div class="card text-left col-lg-7 shadow-lg">
                 <div class="card-header">
-                    Trivia
+                    Quiz
                 </div>
                 <div id="questionDiv" class="card-body" style="display: inline-block">
                     <h5 id="question" class="card-title mh-100" style="height: 50px">here comes the question</h5>
@@ -47,15 +47,45 @@
                 <div id="resultsDiv" class="card-body" style="display: none">
                 </div>
             
-            <div id="counterQuestions" class="card-footer text-muted text-right">
+                <div id="addQuestionDiv" class="card-body" style="display: none">
+                        <h5 id="question" class="card-title mh-100 text-center" style="height: 50px">Add a Question:</h5>
+                        <form id="addQuestionForm">
+                            <div class="form-group">
+                                <input type="text" class="form-control form-control-sm" id="fullQuestion" placeholder="Full Question...">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control form-control-sm" id="addedChoiceA" placeholder="Choice A...">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control form-control-sm" id="addedChoiceB" placeholder="Choice B...">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control form-control-sm" id="addedChoiceC" placeholder="Choice C...">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control form-control-sm" id="addedChoiceD" placeholder="Choice D...">
+                            </div>
+                                <div class="form-group row justify-content-lg-center">
+                                    <label for="inputEmail3" class="col-lg-3 col-form-label">Correct Answer:</label>    
+                                        <select id="answer" class="col-lg-5 form-control form-control-sm">
+                                            <option value="">Choose...</option>
+                                            <option value="A">choice A</option>
+                                            <option value="B">choice B</option>
+                                            <option value="C">choice C</option>
+                                            <option value="D">choice D</option>
+                                        </select>
+                                </div>        
+                                <button id="submitQuestionButton" type="button" class="btn btn-info btn-sm">Submit Question</button>
+                        </form>
+                </div>
+
+                <div id="counterQuestions" class="card-footer text-muted text-right">
                     
                 </div>
             </div>
         </div>
     </div>
 
-
-  
 
     <script type="text/javascript" src="jQuery.js"></script>
     <!-- <script type="text/javascript" src="icon.js"></script> -->

@@ -1,7 +1,7 @@
 let questionCounter = 0;
 let correctAnswers = 0;
 
-const arrayOfQuestions = [
+let arrayOfQuestions = [
   {
     question: "Where in the body is the scapular muscle?",
     choiceA: "Knee",
