@@ -2,20 +2,21 @@
 
 <head>
     <title>Trivia App</title>
-    <link rel="stylesheet" type="text/css" href="./bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="./mycss.css">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./css/mycss.css">
     <meta name="viewport" content="width=device-width" , initial-scal-="1.0">
 </head>
 
 <body>
-    <div class="jumbotron jumbotron-fluid bg-info">
+    <!-- HEADER -->
+    <header class="jumbotron jumbotron-fluid bg-info">
         <div class="container">
             <h1 class="text-center text-light">What is your level of English?</h1>
-             <h6 class="text-center text-light mt-5">Microsoft course project <span><img src="https://www.wamc.org/sites/wamc/files/201606/microsoft.jpg" height="30px" width="90px" alt="pic"></span> | Building Interactive Prototypes using JavaScript | By Adir Avraham</h6>
+             <h6 class="text-center text-light mt-5">Microsoft course project <span><img src="./pic/logo.jpg" height="30px" width="90px" alt="pic"></span> | Building Interactive Prototypes using JavaScript | By Adir Avraham</h6>
         </div>
-    </div>
+    </header>
 
-
+    <!-- MAIM -->
     <div class="container">
         <div class="row justify-content-lg-center">
             <div class="card text-left col-lg-7 shadow-lg">
@@ -45,11 +46,10 @@
                 </div>
             
                 <div id="resultsDiv" class="card-body" style="display: none">
-                        <div id="levelResult" class="alert alert-info" role="alert">
-                               
-                              </div>
+
                 </div>
-            
+
+                <!-- Add Question Page -->
                 <div id="addQuestionDiv" class="card-body" style="display: none">
                         <h5 id="question" class="card-title mh-100 text-center" style="height: 50px">Add a Question:</h5>
                         <form id="addQuestionForm">
@@ -90,9 +90,8 @@
     </div>
 
 
-    <!-- <script type="text/javascript" src="icon.js"></script> -->
-    <script type="text/javascript" src="data.js"></script>
-    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="./js/data.js"></script>
+    <script type="text/javascript" src="./js/app.js"></script>
 </body>
 
 </html>

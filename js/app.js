@@ -17,7 +17,6 @@ const TRIVIA_DOM = {
   add_question_div: document.getElementById("addQuestionDiv"),
   submit_question_button: document.getElementById("submitQuestionButton"),
   add_question_form: document.getElementById("addQuestionForm"),
-  level_result: document.getElementById("levelResult")
 };
 
 function draw(arrayOfQuestions, questionCounter) {
@@ -67,11 +66,14 @@ function checkAnswer(userAnswer) {
 }
 
 function showResults() {
-  const { question_div, results_div, level_result } = TRIVIA_DOM;
+  const { question_div, results_div } = TRIVIA_DOM;
   const ul = document.createElement("ul");
   const retakeButton = document.createElement("button");
   const addQuestionButton = document.createElement("button");
+  const levelMessage = document.createElement("div"); 
 
+  levelMessage.className = "alert alert-info";
+                             
   results_div.style.display = "inline-block";
 
   retakeButton.className = "btn btn-info btn-sm mt-1";
@@ -89,22 +91,22 @@ function showResults() {
   
   switch (correctAnswers) {
     case 8:
-    level_result.innerText = "Your level of English: Fluent";
+      levelMessage.innerText = "Your level of English: Fluent";
     break;
     case 7:
-    level_result.innerText = "Your level of English: Advanced";
+      levelMessage.innerText = "Your level of English: Advanced";
     break;
     case 6:
-    level_result.innerText = "Your level of English: Advanced";
+      levelMessage.innerText = "Your level of English: Advanced";
     break;
     case 5:
-    level_result.innerText = "Your level of English: Intermediate";
+      levelMessage.innerText = "Your level of English: Intermediate";
     break;
     case 4:
-    level_result.innerText = "Your level of English: Intermediate";
+      levelMessage.innerText = "Your level of English: Intermediate";
     break;
     default:
-    level_result.innerText = "Your level of English: Beginner";
+      levelMessage.innerText = "Your level of English: Beginner";
   }
 
   for (let i = 0; arrayOfQuestions.length >= i; i++) {
@@ -120,7 +122,7 @@ function showResults() {
       li.innerText = `Question ${i + 1}: incorrect `;
       ul.append(li);
     }
-    results_div.append(ul, retakeButton, addQuestionButton);
+    results_div.append(levelMessage ,ul, retakeButton, addQuestionButton);
   }
 }
 
