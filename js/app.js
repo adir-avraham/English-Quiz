@@ -26,9 +26,8 @@ function draw(arrayOfQuestions, questionCounter) {
 
   const { question_title, inputA, inputB, inputC, inputD, counter_question, question_div } = TRIVIA_DOM;
 
-  if (question_div.style.display === "none") {
-    question_div.style.display = "block";
-  }
+  isQuestionDivDisplayed(question_div);
+
   question_title.innerText = arrayOfQuestions[questionCounter].question;
 
   inputA.innerHTML = arrayOfQuestions[questionCounter].choiceA;
@@ -43,6 +42,12 @@ function draw(arrayOfQuestions, questionCounter) {
   counter_question.innerText = `Question ${questionCounter + 1} of ${
     arrayOfQuestions.length
   }`;
+}
+
+function isQuestionDivDisplayed(question_div) {
+  if (question_div.style.display === "none") {
+    return question_div.style.display = "block";
+  } 
 }
 
 document.querySelector("#submitBtn").addEventListener("click", getAnswer);
@@ -88,7 +93,6 @@ function showResults() {
 
   ul.className = "list-group";
   question_div.style.display = "none";
-  
   switch (correctAnswers) {
     case 8:
       levelMessage.innerText = "Your level of English: Fluent";
@@ -137,11 +141,7 @@ function retake() {
   results_div.innerHTML = "";
   questionCounter = 0;
   correctAnswers = 0;
-  arrayOfQuestions.forEach(question => {
-    if (question.isCorrect) {
-      question.isCorrect = false;
-    }
-  });
+  arrayOfQuestions.map(question => question.isCorrect = false);
   counter_question.innerText = `Question ${questionCounter + 1} of ${ arrayOfQuestions.length }`;
   init();
 }
